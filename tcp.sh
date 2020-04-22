@@ -209,7 +209,7 @@ startlotserver(){
 		apt-get update
 		apt-get install ethtool
 	fi
-	wget --no-check-certificate -qO-https://raw.githubusercontent.com/feifan1113/Linux-NetSpeed/master/Install.sh && chmod +x Install.sh && ./Install.sh
+	wget --no-check-certificate "https://raw.githubusercontent.com/feifan1113/Linux-NetSpeed/master/Install.sh" && chmod +x Install.sh && ./Install.sh
 	sed -i '/advinacc/d' /appex/etc/config
 	sed -i '/maxmode/d' /appex/etc/config
 	echo -e "advinacc=\"1\"
